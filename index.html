@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Atompark Software Bulk SMS Service API by Atompark</title>
+    <title>Atompark Software Bulk SMS Sender API by Atompark</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,8 +15,8 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Atompark Software Bulk SMS Service API</h1>
-        <p>API for sendind sms via Atompark SMS service http://massmailsoftware.com/</p>
+        <h1>Atompark Software Bulk SMS Sender API</h1>
+        <p>API for sendind sms via Atompark SMS Service</p>
 
         <p class="view"><a href="https://github.com/Atompark/atompark-sms-api">View the Project on GitHub <small>Atompark/atompark-sms-api</small></a></p>
 
@@ -29,36 +29,18 @@
       </header>
       <section>
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="atomic-bulk-sms-service-api" class="anchor" href="#atomic-bulk-sms-service-api"><span class="octicon octicon-link"></span></a>Atomic Bulk SMS Service API</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>This PHP API allows to send sms via <a href="http://www.massmailsoftware.com/bulksmsandpager/">Atomic Bulk SMS Sender</a></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<p>To activate API 3.0. usage, please login into Atomic SMS Sender account and in the Settings section -&gt; Atomic SMS Sender tab choose “Yes” in the Active API 3.0.</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p><strong>Note!</strong> Unlike the XML interface in API 3.0 the test mode is activated by transferring the test=1 parameter. Please note that the current parameter is also used in the checksum generating, if exists.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>To view examples of using the API, please visit the <a href="http://www.massmailsoftware.com/bulksmsandpager/sms-gateway.php">Bulk SMS Api</a> page on the official website</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>To use API methods means to send an HTTP-request to the URL like:
+<a href="http://atompark.com/api/sms/3.0/METHOD?key=public_key&amp;sum=CONTROL_SUM&amp;arg1=ARG_1&amp;argN=ARG_N">http://atompark.com/api/sms/3.0/METHOD?key=public_key&amp;sum=CONTROL_SUM&amp;arg1=ARG_1&amp;argN=ARG_N</a></p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/Atompark">Atompark</a></p>
